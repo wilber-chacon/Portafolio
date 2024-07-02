@@ -64,6 +64,7 @@ section#home{
   background-size: cover;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: -15px;
+  overflow: hidden;
 }
 
 
