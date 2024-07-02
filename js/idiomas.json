@@ -1,0 +1,34 @@
+{
+    "es":{
+        "menuOp1":"Inicio",
+        "menuOp2":"Habilidades",
+        "menuOp3":"Proyectos",
+        "menuOp4":"Contacto",
+        "tituloNombre":"¡Hola! mi nombre es Wilber Chacón.",
+        "descripcion-home":"Soy un desarrollador de software Backend apasionado y motivado, buscando nuevos desafíos en los que pueda aplicar mis habilidades o adquirir nuevas. A lo largo de mi formación he adquirido sólidos conocimientos y habilidades en desarrollo de software mediante cursos y proyectos académicos, destacando en colaboración, comunicación efectiva y resolución de problemas.",
+        "descripcion-home2":"Tengo conocimientos en Java, PHP, SQL, JavaScript, HTML, CSS y frameworks como Bootstrap, Laravel, Eloquent ORM, Hibernate y JavaServer Faces. Estoy dispuesto a aprender rápidamente y adaptarme a nuevos entornos. Soy un pensador creativo y analítico, capaz de abordar desafíos con soluciones innovadoras.",
+        "titulo-proyecto-1":"CRUD con PHP y MySQL",
+        "tecnologias-proyecto":"Tecnologías:",
+        "descripcion-proyecto-1":"Aplicación que permite insertar, consultar, editar y eliminar información almacenada en base de datos Mysql.",
+        "boton-proyecto":"Ver repositorio",
+        "contacto-mail":"Correo electrónico",
+        "contacto-linkedin":"Perfil de linkedin",
+        "contacto-github":"Perfil de github"
+    },
+    "en":{
+        "menuOp1":"Home",
+        "menuOp2":"Skills",
+        "menuOp3":"Projects",
+        "menuOp4":"Contact",
+        "tituloNombre":"¡Hello! my name is Wilber Chacón.",
+        "descripcion-home":"I am a passionate and motivated Backend software developer, looking for new challenges where I can apply my skills or acquire new ones. Throughout my training I have acquired solid knowledge and skills in software development through courses and academic projects, excelling in collaboration, effective communication and problem solving.",
+        "descripcion-home2":"I have knowledge of Java, PHP, SQL, JavaScript, HTML, CSS and frameworks such as Bootstrap, Laravel, Eloquent ORM, Hibernate and JavaServer Faces. I am willing to learn quickly and adapt to new environments. I am a creative and analytical thinker, capable of addressing challenges with innovative solutions.",
+        "titulo-proyecto-1":"CRUD with PHP and MySQL",
+        "tecnologias-proyecto":"Technologies:",
+        "descripcion-proyecto-1":"Application that has the function of inserting, reading, updating and deleting information stored in the Mysql database.",
+        "boton-proyecto":"View repository",
+        "contacto-mail":"Email",
+        "contacto-linkedin":"Linkedin profile",
+        "contacto-github":"Github profile"
+    }
+}
