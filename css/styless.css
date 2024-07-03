@@ -316,6 +316,9 @@ section#skills{
 }
 
 
+.card{
+  position: relative;
+}
 
 .titulo-projects{
   text-align: center;
