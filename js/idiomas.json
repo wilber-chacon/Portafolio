@@ -8,12 +8,16 @@
         "descripcion-home":"Soy un desarrollador de software Backend apasionado y motivado, buscando nuevos desafíos en los que pueda aplicar mis habilidades o adquirir nuevas. A lo largo de mi formación he adquirido sólidos conocimientos y habilidades en desarrollo de software mediante cursos y proyectos académicos, destacando en colaboración, comunicación efectiva y resolución de problemas.",
         "descripcion-home2":"Tengo conocimientos en Java, PHP, SQL, JavaScript, HTML, CSS y frameworks como Bootstrap, Laravel, Eloquent ORM, Hibernate y JavaServer Faces. Estoy dispuesto a aprender rápidamente y adaptarme a nuevos entornos. Soy un pensador creativo y analítico, capaz de abordar desafíos con soluciones innovadoras.",
         "titulo-proyecto-1":"CRUD con PHP y MySQL",
-        "tecnologias-proyecto":"Tecnologías:",
+        "tecnologias-proyecto":"Principales tecnologías:",
         "descripcion-proyecto-1":"Aplicación que permite insertar, consultar, editar y eliminar información almacenada en base de datos Mysql.",
         "boton-proyecto":"Ver repositorio",
         "contacto-mail":"Correo electrónico",
         "contacto-linkedin":"Perfil de linkedin",
-        "contacto-github":"Perfil de github"
+        "contacto-github":"Perfil de github",
+        "titulo-proyecto-2":"Lector y generador de archivo Excel",
+        "descripcion-proyecto-2":"Aplicación que utiliza la tecnología de PhpSpreadsheet para generar reporte de productos por existencias en un archivo Excel y también leer los datos del mismo tipo de archivo para ser ingresados en la base de datos Mysql.",
+        "titulo-proyecto-3":"API REST y cliente PHP",
+        "descripcion-proyecto-3":"Servicio de API que permite realizar las operaciones de CRUD sobre una base de datos Mysql, además, se desarrolló un cliente en lenguaje PHP para el consumo del servicio API REST."
     },
     "en":{
         "menuOp1":"Home",
@@ -24,11 +28,15 @@
         "descripcion-home":"I am a passionate and motivated Backend software developer, looking for new challenges where I can apply my skills or acquire new ones. Throughout my training I have acquired solid knowledge and skills in software development through courses and academic projects, excelling in collaboration, effective communication and problem solving.",
         "descripcion-home2":"I have knowledge of Java, PHP, SQL, JavaScript, HTML, CSS and frameworks such as Bootstrap, Laravel, Eloquent ORM, Hibernate and JavaServer Faces. I am willing to learn quickly and adapt to new environments. I am a creative and analytical thinker, capable of addressing challenges with innovative solutions.",
         "titulo-proyecto-1":"CRUD with PHP and MySQL",
-        "tecnologias-proyecto":"Technologies:",
+        "tecnologias-proyecto":"Main technologies:",
         "descripcion-proyecto-1":"Application that has the function of inserting, reading, updating and deleting information stored in the Mysql database.",
         "boton-proyecto":"View repository",
         "contacto-mail":"Email",
         "contacto-linkedin":"Linkedin profile",
-        "contacto-github":"Github profile"
+        "contacto-github":"Github profile",
+        "titulo-proyecto-2":"Excel file reader and generator",
+        "descripcion-proyecto-2":"Application that uses PhpSpreadsheet technology to generate a product report by stock in an Excel file and also read the data from the same type of file to be entered into the Mysql database.",
+        "titulo-proyecto-3":"API REST and PHP client",
+        "descripcion-proyecto-3":"API service that contains CRUD operations on a Mysql database. In addition, a client was developed in PHP language for the consumption of the REST API service."
     }
 }
