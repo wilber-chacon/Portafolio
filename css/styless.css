@@ -417,12 +417,14 @@ section#projects{
   border-radius: 15px;
   text-align: center;
   opacity: 0;
+  display: none;
   transition: .3s all ease-in;
   overflow: hidden;
 }
 
 
 .card:hover .info-card{
+  display: block;
   opacity: 1;
 }
 
