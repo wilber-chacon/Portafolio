@@ -4,40 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wilber Chacón</title>
-    <link rel="stylesheet" href="css/styless.css" />
-    <script src="https://kit.fontawesome.com/899726b4a6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/899726b4a6.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header id="header">
       <a href="#" class="logo">Wilber Chacón</a>
-      <button class="btnMenu" id="btnMenu">
-        <span id="barras"><i class="fas fa-bars"></i></span>
-        <span id="close"><i class="fas fa-times"></i></span>
-      </button>
+
+      <label class="hamburger btnMenu">
+        <input type="checkbox" id="btnMenu" />
+        <svg viewBox="0 0 32 32">
+          <path
+            class="line line-top-bottom"
+            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+          ></path>
+          <path class="line" d="M7 16 27 16"></path>
+        </svg>
+      </label>
+
       <nav id="menu">
         <a
-          class="lang active"
+          class="lang menulink active"
           key="menuOp1"
           href="#home"
           style="--clr: #145e9b; --clrB: #031926"
           >Inicio</a
         >
         <a
-          class="lang"
+          class="lang menulink"
           key="menuOp2"
           href="#skills"
           style="--clr: #77aca2; --clrB: #164e55"
           >Habilidades</a
         >
         <a
-          class="lang"
+          class="lang menulink"
           key="menuOp3"
           href="#projects"
           style="--clr: #f4e9cd; --clrB: #031926"
           >Proyectos</a
         >
         <a
-          class="lang"
+          id="contactlink"
+          class="lang menulink"
           key="menuOp4"
           href="#contact"
           style="--clr: #77aca2; --clrB: #164e55"
@@ -45,16 +57,76 @@
         >
       </nav>
       <div class="right-content">
-        <button class="switch" id="switch" title="Tema">
-          <span><i class="fas fa-sun"></i></span>
-          <span><i class="fas fa-moon"></i></span>
-        </button>
-        <button class="translate" id="es" title="Idioma español">
-          <i class="fas fa-globe-americas"></i> Es
-        </button>
-        <button class="translate enable" id="en" title="Idioma ingles">
-          <i class="fas fa-globe-americas"></i> En
-        </button>
+        <label class="theme-switch">
+          <input type="checkbox" id="switch" class="theme-switch__checkbox" />
+          <div class="theme-switch__container">
+            <div class="theme-switch__clouds"></div>
+            <div class="theme-switch__stars-container">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 144 55"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <div class="theme-switch__circle-container">
+              <div class="theme-switch__sun-moon-container">
+                <div class="theme-switch__moon">
+                  <div class="theme-switch__spot"></div>
+                  <div class="theme-switch__spot"></div>
+                  <div class="theme-switch__spot"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </label>
+
+        <div id="btntranslate">
+          <button class="translate" id="es" title="Idioma español">
+            <div class="svg-wrapper-1">
+              <div class="svg-wrapper">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  width="40"
+                  height="40"
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path
+                    fill="currentColor"
+                    d="M57.7 193l9.4 16.4c8.3 14.5 21.9 25.2 38 29.8L163 255.7c17.2 4.9 29 20.6 29 38.5l0 39.9c0 11 6.2 21 16 25.9s16 14.9 16 25.9l0 39c0 15.6 14.9 26.9 29.9 22.6c16.1-4.6 28.6-17.5 32.7-33.8l2.8-11.2c4.2-16.9 15.2-31.4 30.3-40l8.1-4.6c15-8.5 24.2-24.5 24.2-41.7l0-8.3c0-12.7-5.1-24.9-14.1-33.9l-3.9-3.9c-9-9-21.2-14.1-33.9-14.1L257 256c-11.1 0-22.1-2.9-31.8-8.4l-34.5-19.7c-4.3-2.5-7.6-6.5-9.2-11.2c-3.2-9.6 1.1-20 10.2-24.5l5.9-3c6.6-3.3 14.3-3.9 21.3-1.5l23.2 7.7c8.2 2.7 17.2-.4 21.9-7.5c4.7-7 4.2-16.3-1.2-22.8l-13.6-16.3c-10-12-9.9-29.5 .3-41.3l15.7-18.3c8.8-10.3 10.2-25 3.5-36.7l-2.4-4.2c-3.5-.2-6.9-.3-10.4-.3C163.1 48 84.4 108.9 57.7 193zM464 256c0-36.8-9.6-71.4-26.4-101.5L412 164.8c-15.7 6.3-23.8 23.8-18.5 39.8l16.9 50.7c3.5 10.4 12 18.3 22.6 20.9l29.1 7.3c1.2-9 1.8-18.2 1.8-27.5zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span>Es</span>
+          </button>
+          <button class="translate enable" id="en" title="Idioma ingles">
+            <div class="svg-wrapper-1">
+              <div class="svg-wrapper">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  width="40"
+                  height="40"
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path
+                    fill="currentColor"
+                    d="M57.7 193l9.4 16.4c8.3 14.5 21.9 25.2 38 29.8L163 255.7c17.2 4.9 29 20.6 29 38.5l0 39.9c0 11 6.2 21 16 25.9s16 14.9 16 25.9l0 39c0 15.6 14.9 26.9 29.9 22.6c16.1-4.6 28.6-17.5 32.7-33.8l2.8-11.2c4.2-16.9 15.2-31.4 30.3-40l8.1-4.6c15-8.5 24.2-24.5 24.2-41.7l0-8.3c0-12.7-5.1-24.9-14.1-33.9l-3.9-3.9c-9-9-21.2-14.1-33.9-14.1L257 256c-11.1 0-22.1-2.9-31.8-8.4l-34.5-19.7c-4.3-2.5-7.6-6.5-9.2-11.2c-3.2-9.6 1.1-20 10.2-24.5l5.9-3c6.6-3.3 14.3-3.9 21.3-1.5l23.2 7.7c8.2 2.7 17.2-.4 21.9-7.5c4.7-7 4.2-16.3-1.2-22.8l-13.6-16.3c-10-12-9.9-29.5 .3-41.3l15.7-18.3c8.8-10.3 10.2-25 3.5-36.7l-2.4-4.2c-3.5-.2-6.9-.3-10.4-.3C163.1 48 84.4 108.9 57.7 193zM464 256c0-36.8-9.6-71.4-26.4-101.5L412 164.8c-15.7 6.3-23.8 23.8-18.5 39.8l16.9 50.7c3.5 10.4 12 18.3 22.6 20.9l29.1 7.3c1.2-9 1.8-18.2 1.8-27.5zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span>En</span>
+          </button>
+        </div>
       </div>
     </header>
     <section id="home" class="lang" style="--clr: #f4e9cd; --clrB: #031926">
@@ -62,12 +134,22 @@
         <img src="img/avatar.svg" alt="Dev" />
       </div>
       <div class="box-home box">
-        <h3 id="titulo-nombre" class="lang" key="tituloNombre"></h3>
+        <h3 id="titulo-nombre" class="lang animate-charcter" key="tituloNombre"></h3>
         <p key="descripcion-home" class="lang">
-          Soy un desarrollador de software Backend apasionado y motivado, buscando nuevos desafíos en los que pueda aplicar mis habilidades o adquirir nuevas. A lo largo de mi formación he adquirido sólidos conocimientos y habilidades en desarrollo de software mediante cursos y proyectos académicos, destacando en colaboración, comunicación efectiva y resolución de problemas.
+          Soy un desarrollador de software Backend apasionado y motivado,
+          buscando nuevos desafíos en los que pueda aplicar mis habilidades o
+          adquirir nuevas. A lo largo de mi formación he adquirido sólidos
+          conocimientos y habilidades en desarrollo de software mediante cursos
+          y proyectos académicos, destacando en colaboración, comunicación
+          efectiva y resolución de problemas.
         </p>
         <p key="descripcion-home2" class="lang">
-          Soy un desarrollador de software Backend apasionado y motivado, buscando nuevos desafíos en los que pueda aplicar mis habilidades o adquirir nuevas. A lo largo de mi formación he adquirido sólidos conocimientos y habilidades en desarrollo de software mediante cursos y proyectos académicos, destacando en colaboración, comunicación efectiva y resolución de problemas.
+          Soy un desarrollador de software Backend apasionado y motivado,
+          buscando nuevos desafíos en los que pueda aplicar mis habilidades o
+          adquirir nuevas. A lo largo de mi formación he adquirido sólidos
+          conocimientos y habilidades en desarrollo de software mediante cursos
+          y proyectos académicos, destacando en colaboración, comunicación
+          efectiva y resolución de problemas.
         </p>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 210">
@@ -83,73 +165,73 @@
       <div class="titulo-skills">
         <h3 key="menuOp2" class="lang">Habilidades</h3>
       </div>
-      <div class="box-skills">        
+      <div class="box-skills">
         <div class="card">
-          <img src="img/java.svg" alt="java">
+          <img src="img/java.svg" alt="java" />
           <h4>Java</h4>
         </div>
         <div class="card">
-          <img src="img/sql.svg" alt="sql">
+          <img src="img/sql.svg" alt="sql" />
           <h4>SQL</h4>
         </div>
         <div class="card">
-          <img src="img/hibernate.png" alt="hibernate-orm">
+          <img src="img/hibernate.png" alt="hibernate-orm" />
           <h4>Hibernate ORM</h4>
         </div>
         <div class="card">
-          <img src="img/Java-server-Faces.webp" alt="Java-server-Faces">
+          <img src="img/Java-server-Faces.webp" alt="Java-server-Faces" />
           <h4>JavaServer Faces</h4>
-        </div> 
+        </div>
         <div class="card">
-          <img src="img/bootstrap.svg" alt="bootstrap">
+          <img src="img/bootstrap.svg" alt="bootstrap" />
           <h4>Bootstrap</h4>
-        </div>        
+        </div>
         <div class="card">
-          <img src="img/Php.svg" alt="php">
+          <img src="img/Php.svg" alt="php" />
           <h4>PHP</h4>
         </div>
         <div class="card">
-          <img src="img/laravel.svg" alt="laravel">
+          <img src="img/laravel.svg" alt="laravel" />
           <h4>Laravel</h4>
         </div>
         <div class="card">
-          <img src="img/github.svg" alt="github">
+          <img src="img/github.svg" alt="github" />
           <h4>Github</h4>
         </div>
         <div class="card">
-          <img src="img/mysql.svg" alt="mysql">
+          <img src="img/mysql.svg" alt="mysql" />
           <h4>Mysql</h4>
         </div>
         <div class="card">
-          <img src="img/eloquent.png" alt="eloquent-orm">
+          <img src="img/eloquent.png" alt="eloquent-orm" />
           <h4>Eloquent ORM</h4>
         </div>
         <div class="card">
-          <img src="img/sql-server.svg" alt="sql-server">
+          <img src="img/sql-server.svg" alt="sql-server" />
           <h4>SQL Server</h4>
         </div>
         <div class="card">
-          <img src="img/html5.svg" alt="HTML5">
+          <img src="img/html5.svg" alt="HTML5" />
           <h4>HTML5</h4>
         </div>
         <div class="card">
-          <img src="img/css.svg" alt="css">
+          <img src="img/css.svg" alt="css" />
           <h4>CSS3</h4>
         </div>
         <div class="card">
-          <img src="img/javascript.svg" alt="javascript">
+          <img src="img/javascript.svg" alt="javascript" />
           <h4>JavaScript</h4>
         </div>
         <div class="card">
-          <img src="img/wampserver.webp" alt="wampserver">
+          <img src="img/wampserver.webp" alt="wampserver" />
           <h4>WampServer</h4>
         </div>
         <div class="card">
-          <img src="img/intellijidea.svg" alt="intellijidea">
+          <img src="img/intellijidea.svg" alt="intellijidea" />
           <h4>Intellij IDEA</h4>
         </div>
         <div class="card">
-          <img src="img/postman.svg" alt="postman">
+          <img src="img/postman.svg" alt="postman" />
           <h4>Postman</h4>
         </div>
       </div>
@@ -166,80 +248,162 @@
         <h3 class="lang" key="menuOp3">Proyectos</h3>
       </div>
       <div class="box-projects">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="img">
+              <div class="circle"></div>
+              <div class="circle" id="right"></div>
+              <div class="circle" id="bottom"></div>
+            </div>
+            <div class="flip-card-front">
+              <img
+                src="img/Proyectos-img/Screen-proyecto3.webp"
+                id="img-proyecto"
+                alt="proyecto3"
+              />
+              <h4 key="titulo-proyecto-3" class="lang">
+                API REST y cliente PHP
+              </h4>
+              <p key="tecnologias-proyecto" class="lang">
+                Principales tecnologías:
+              </p>
+              <div class="tecnologias">
+                <div class="tecno">
+                  <img src="img/Php.svg" alt="php" />
+                </div>
+                <div class="tecno">
+                  <img src="img/mysql.svg" alt="mysql" />
+                </div>
+                <div class="tecno">
+                  <img src="img/laravel.svg" alt="laravel" />
+                </div>
+                <div class="tecno">
+                  <img src="img/eloquent.png" alt="eloquent" />
+                </div>
+                <div class="tecno">
+                  <img src="img/bootstrap.svg" alt="bootstrap" />
+                </div>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <p key="descripcion-proyecto-3" class="lang">
+                Servicio de API que permite realizar las operaciones de CRUD
+                sobre una base de datos Mysql, además, se desarrolló un cliente
+                en lenguaje PHP para el consumo del servicio API REST.
+              </p>
+              <a
+                href="https://github.com/wilber-chacon/API-Rest-con-Laravel-y-Eloquent-ORM"
+                target="_blank"
+              >
+                <img src="img/github-blanco.png" />
+                <span key="boton-proyecto" class="lang">
+                  Ver repositorio</span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
 
-        <div class="card">
-          <img src="img/Proyectos-img/Screen-proyecto3.PNG" alt="proyecto3">
-          <h4 key="titulo-proyecto-3" class="lang">API REST y cliente PHP</h4>
-          <p key="tecnologias-proyecto" class="lang">Principales tecnologías:</p>
-          <div class="tecnologias">
-            <div class="tecno">
-              <img src="img/Php.svg" alt="php">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="img">
+              <div class="circle"></div>
+              <div class="circle" id="right"></div>
+              <div class="circle" id="bottom"></div>
             </div>
-            <div class="tecno">
-              <img src="img/mysql.svg" alt="mysql">
+            <div class="flip-card-front">
+              <img
+                src="img/Proyectos-img/Screen-proyecto2.webp"
+                alt="proyecto2"
+                id="img-proyecto"
+              />
+              <h4 key="titulo-proyecto-2" class="lang">
+                Lector y generador de archivo Excel
+              </h4>
+              <p key="tecnologias-proyecto" class="lang">
+                Principales tecnologías:
+              </p>
+              <div class="tecnologias">
+                <div class="tecno">
+                  <img src="img/Php.svg" alt="php" />
+                </div>
+                <div class="tecno">
+                  <img src="img/mysql.svg" alt="mysql" />
+                </div>
+                <div class="tecno">
+                  <img src="img/phpspreadsheet.png" alt="phpspreadsheet" />
+                </div>
+                <div class="tecno">
+                  <img src="img/bootstrap.svg" alt="bootstrap" />
+                </div>
+              </div>
             </div>
-            <div class="tecno">
-              <img src="img/laravel.svg" alt="laravel">
+            <div class="flip-card-back">
+              <p key="descripcion-proyecto-2" class="lang">
+                Aplicación que utiliza la tecnología de PhpSpreadsheet para
+                generar reporte de productos por existencias en un archivo Excel
+                y también leer los datos del mismo tipo de archivo para ser
+                ingresados en la base de datos Mysql.
+              </p>
+              <a
+                href="https://github.com/wilber-chacon/Lector_y_generador_de_archivo_Excel"
+                target="_blank"
+              >
+                <img src="img/github-blanco.png" />
+                <span key="boton-proyecto" class="lang">
+                  Ver repositorio</span
+                ></a
+              >
             </div>
-            <div class="tecno">
-              <img src="img/eloquent.png" alt="eloquent">
-            </div>
-            <div class="tecno">
-              <img src="img/bootstrap.svg" alt="bootstrap">
-            </div>
-          </div>
-          <div class="info-card">
-            <p key="descripcion-proyecto-3" class="lang">Servicio de API que permite realizar las operaciones de CRUD sobre una base de datos Mysql, además, se desarrolló un cliente en lenguaje PHP para el consumo del servicio API REST.</p>
-            <a href="https://github.com/wilber-chacon/API-Rest-con-Laravel-y-Eloquent-ORM" target="_blank"> <img src="img/github-blanco.png"> <span key="boton-proyecto" class="lang"> Ver repositorio</span></a>
           </div>
         </div>
-        
-        <div class="card">
-          <img src="img/Proyectos-img/Screen-proyecto2.png" alt="proyecto2">
-          <h4 key="titulo-proyecto-2" class="lang">Lector y generador de archivo Excel</h4>
-          <p key="tecnologias-proyecto" class="lang">Principales tecnologías:</p>
-          <div class="tecnologias">
-            <div class="tecno">
-              <img src="img/Php.svg" alt="php">
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="img">
+              <div class="circle"></div>
+              <div class="circle" id="right"></div>
+              <div class="circle" id="bottom"></div>
             </div>
-            <div class="tecno">
-              <img src="img/mysql.svg" alt="mysql">
+            <div class="flip-card-front">
+              <img
+                src="img/Proyectos-img/Screen-proyecto1.webp"
+                alt="proyecto1"
+                id="img-proyecto"
+              />
+              <h4 key="titulo-proyecto-1" class="lang">CRUD con PHP y MySQL</h4>
+              <p key="tecnologias-proyecto" class="lang">
+                Principales tecnologías:
+              </p>
+              <div class="tecnologias">
+                <div class="tecno">
+                  <img src="img/Php.svg" alt="php" />
+                </div>
+                <div class="tecno">
+                  <img src="img/mysql.svg" alt="mysql" />
+                </div>
+                <div class="tecno">
+                  <img src="img/bootstrap.svg" alt="bootstrap" />
+                </div>
+              </div>
             </div>
-            <div class="tecno">
-              <img src="img/phpspreadsheet.png" alt="phpspreadsheet">
+            <div class="flip-card-back">
+              <p key="descripcion-proyecto-1" class="lang">
+                Aplicación que permite insertar, consultar, editar y eliminar
+                información almacenada en base de datos Mysql.
+              </p>
+              <a
+                href="https://github.com/wilber-chacon/CRUD-con-PHP-y-MySQL"
+                target="_blank"
+              >
+                <img src="img/github-blanco.png" />
+                <span key="boton-proyecto" class="lang">
+                  Ver repositorio</span
+                ></a
+              >
             </div>
-            <div class="tecno">
-              <img src="img/bootstrap.svg" alt="bootstrap">
-            </div>
-          </div>
-          <div class="info-card">
-            <p key="descripcion-proyecto-2" class="lang">Aplicación que utiliza la tecnología de PhpSpreadsheet para generar reporte de productos por existencias en un archivo Excel y también leer los datos del mismo tipo de archivo para ser ingresados en la base de datos Mysql.</p>
-            <a href="https://github.com/wilber-chacon/Lector_y_generador_de_archivo_Excel" target="_blank"> <img src="img/github-blanco.png"> <span key="boton-proyecto" class="lang"> Ver repositorio</span></a>
           </div>
         </div>
-        
-        <div class="card">
-          <img src="img/Proyectos-img/Screen-proyecto1.png" alt="proyecto1">
-          <h4 key="titulo-proyecto-1" class="lang">CRUD con PHP y MySQL</h4>
-          <p key="tecnologias-proyecto" class="lang">Principales tecnologías:</p>
-          <div class="tecnologias">
-            <div class="tecno">
-              <img src="img/Php.svg" alt="php">
-            </div>
-            <div class="tecno">
-              <img src="img/mysql.svg" alt="mysql">
-            </div>
-            <div class="tecno">
-              <img src="img/bootstrap.svg" alt="bootstrap">
-            </div>
-          </div>
-          <div class="info-card">
-            <p key="descripcion-proyecto-1" class="lang">Aplicación que permite insertar, consultar, editar y eliminar información almacenada en base de datos Mysql.</p>
-            <a href="https://github.com/wilber-chacon/CRUD-con-PHP-y-MySQL" target="_blank"> <img src="img/github-blanco.png"> <span key="boton-proyecto" class="lang"> Ver repositorio</span></a>
-          </div>
-        </div>
-        
-        
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 210">
         <path
@@ -254,34 +418,76 @@
         <h3 class="lang" key="menuOp4">Contacto</h3>
       </div>
       <div class="box-contact">
-        <div class="card">
-          <img src="img/mail.svg" alt="mail">
-          <a href="mailto:wilber.franciscochacon@gmail.com" target="_blank" key="contacto-mail" class="lang">Correo electrónico</a>
-        </div>
-        <div class="card">
-          <img src="img/linkedin.svg" alt="linkedin">
-          <a href="https://www.linkedin.com/in/wilber-chac%C3%B3n-sv/" target="_blank" key="contacto-linkedin" class="lang">Perfil de linkedin</a>
-        </div>
-        <div class="card">
-          <img src="img/github.svg" alt="github">
-          <a href="https://github.com/wilber-chacon" target="_blank" key="contacto-github" class="lang">Perfil de github</a>
-        </div>
+        <a
+          href="mailto:wilber.franciscochacon@gmail.com"
+          target="_blank"
+          class="btn"
+        >
+          <svg
+            width="100"
+            height="100"
+            fill="#fff"
+            xmlns="http://www.w3.org/2000/svg"
+            data-name="Layer 1"
+            viewBox="0 0 512 512"
+            id="github"
+          >
+            <path
+              d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+            />
+          </svg>
+        </a>
+
+        <a href="https://github.com/wilber-chacon" target="_blank" class="btn">
+          <svg
+            width="100"
+            height="100"
+            fill="#fff"
+            xmlns="http://www.w3.org/2000/svg"
+            data-name="Layer 1"
+            viewBox="0 0 24 24"
+            id="github"
+          >
+            <path
+              d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"
+            ></path>
+          </svg>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/wilber-chac%C3%B3n-sv/"
+          target="_blank"
+          class="btn"
+        >
+          <svg
+            width="100"
+            height="100"
+            fill="#fff"
+            xmlns="http://www.w3.org/2000/svg"
+            data-name="Layer 1"
+            viewBox="0 0 448 512"
+            id="linkedin"
+          >
+            <path
+              d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+            />
+          </svg>
+        </a>
       </div>
     </section>
 
     <footer>
       <div class="footer">
-        <br>
-        <br>
+        <br />
+        <br />
         Copyright © 2024 - Wilber Chacón
       </div>
     </footer>
 
-    <script src="js/script.js"></script>
     <script src="js/jquery-1.12.0.min.js"></script>
     <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/translate.js"></script>
-
+    <script src="js/scripts.js"></script>
   </body>
 </html>
