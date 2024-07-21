@@ -1341,7 +1341,7 @@ body.dark .flip-card-back p {
   }
 
   header.enable ~ #home {
-    margin-top: -550px;
+    margin-top: -590px;
   }
 }
 
