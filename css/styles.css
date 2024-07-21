@@ -978,6 +978,7 @@ footer {
   height: 200px;
   background: rgba(158, 190, 187, 0.9);
   background: no-repeat center url("../img/home.webp");
+  background-size: cover;
 }
 
 .footer {
