@@ -837,7 +837,8 @@ section#projects {
 }
 
 .box-projects .flip-card-front h4 {
-  width: 100%;
+  margin: auto;
+  width: 90%;
   font-weight: bold;
   text-align: center;
   font-size: 0.55em;
