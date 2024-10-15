@@ -21,7 +21,9 @@
         "titulo-proyecto-4":"API Rest con JSON Web Token",
         "descripcion-proyecto-4":"Servicio de API Rest que permite realizar las operaciones de registro y autenticación de usuarios por medio de la tecnología JSON Web Token, además de las operaciones CRUD sobre una tabla llamada products las cuales se almacenan en una base de datos Mysql y por medio de Eloquent ORM se manipulan los datos tratados en la API.",
         "titulo-proyecto-5":"Juego: piedra, papel o tijera en Java",
-        "descripcion-proyecto-5":"Aplicación basada en el juego piedra, papel o tijera, el cual esta compuesto de tres partidas, en las que el jugador se enfrenta a un segundo jugador (maquina), en cada una de ellas se muestra el resultado de la partida y luego de las tres se muestra el resultado final del juego para dar a conocer si el jugador resulto victorioso, hubo un empate o perdió."
+        "descripcion-proyecto-5":"Aplicación basada en el juego piedra, papel o tijera, el cual esta compuesto de tres partidas, en las que el jugador se enfrenta a un segundo jugador (maquina), en cada una de ellas se muestra el resultado de la partida y luego de las tres se muestra el resultado final del juego para dar a conocer si el jugador resulto victorioso, hubo un empate o perdió.",
+        "titulo-proyecto-6":"CRUD con Java, JSP, MVC y MySQL",
+        "descripcion-proyecto-6":"Aplicación desarrollada en leguaje Java que permite realizar las operaciones de insertar, consultar, actualizar y eliminar información de una base de datos MySQL. Este aplicativo comprende la programación orientada a objetos, así como el patrón de diseño MVC (modelo, vista controlador)."
     },
     "en":{
         "menuOp1":"Home",
@@ -45,6 +47,8 @@
         "titulo-proyecto-4":"API Rest with JSON Web Token",
         "descripcion-proyecto-4":"API service that allows user registration and authentication operations to be carried out through JSON Web Token technology, in addition to CRUD operations on a table called products which are stored in a Mysql database and through Eloquent ORM The data processed in the API is manipulated.",
         "titulo-proyecto-5":"Game: rock, paper, scissors in Java",
-        "descripcion-proyecto-5":"Application based on the game rock, paper or scissors, which is composed of three games, in which the player faces a second player (machine), in each of them the result of the game is shown and then the Three shows the final result of the game to show whether the player was victorious, there was a tie or lost."
+        "descripcion-proyecto-5":"Application based on the game rock, paper or scissors, which is composed of three games, in which the player faces a second player (machine), in each of them the result of the game is shown and then the Three shows the final result of the game to show whether the player was victorious, there was a tie or lost.",
+        "titulo-proyecto-6":"CRUD with Java, JSP, MVC and MySQL",
+        "descripcion-proyecto-6":"Application developed in Java language that allows you to perform the operations of inserting, querying, updating and deleting information from a MySQL database. This application understands object-oriented programming as well as the MVC (model, view controller) design pattern."
     }
 }
